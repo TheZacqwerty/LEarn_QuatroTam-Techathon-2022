@@ -13,7 +13,7 @@
     </head>
     <body style="background-color:whitesmoke">
         <?php
-            if (mysqli_num_rows($querJobs) > 1){
+            if (mysqli_num_rows($querJobs) > 0){
                 while ($rows = mysqli_fetch_assoc($querJobs)){
                     echo "<div class=\"d-flex bd-highlight\">
                     <div class=\"p-2  border border-dark flex-grow-1 bd-highlight fs-5\">".$rows['jobTitle']."</div>

@@ -13,7 +13,7 @@
     </head>
     <body style="background-color:whitesmoke">
         <?php
-            if (mysqli_num_rows($querJobs) > 1){
+            if (mysqli_num_rows($querJobs) > 0){
                 while ($rows = mysqli_fetch_assoc($querJobs)){
 
                     $getC = mysqli_query($conn, "SELECT COUNT(*) as \"counter\" FROM app_proc WHERE jobId='".$rows["jobId"]."'");
